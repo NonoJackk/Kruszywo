@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruszywo Sp. z o. o. | Kontakt</title>
+    <meta name="description" content="Masz pytanie, coś jest nie jasne, a może chcesz złożyć zamówienie? Skontaktuj się z nami!">
+    <link rel="stylesheet" href="styles.css">
+    <script src="Scripts/inViewAnimations.js"></script>
+    <script src="Scripts/menu.js"></script>
+    <script src="Scripts/mailer.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <a href="index.html" class="logo-link">
+                <img class="logo" src="images/logo.png" alt="Kruszywo Sp. z o.o. - Logo firmy wydobywczej i drogowej">
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="about.html">O Nas</a></li>
+                    <li><a href="service.html">Oferta</a></li>
+                    <li><a href="gallery.html">Realizacje</a></li>
+                    <li><a href="work.html">Praca</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="white-bar"></div>
+        <div class="blue-bar"></div>
+    </header>
+    <main>
+        <section class="title-bar">
+            <div class="title">
+                <h2>Kontakt</h2>
+            </div>
+        </section>
+        <section class="container contacts">
+            <div class="contact-main fadeIn">
+                <h2>Siedziba główna</h2>
+                <p>
+                    <b>KRUSZYWO Sp. z o.o.</b><br />
+                    ul. Długa 4B<br />
+                    84-223 LINIA<br />
+                    woj. pomorskie<br />
+                    <br />
+                    (58) 676 80 59<br />
+                    (58) 678 15 33<br />
+                    <a href="mailto:biuro@kruszywolinia.pl" class="contact-email">biuro@kruszywolinia.pl</a>
+                </p>
+            </div>
+            <div class="decorative-line fadeIn"></div>
+            <div class="contact-pair fadeIn">
+                <div class="contact-entry">
+                    <h3>Dział handlowy</h3>
+                    <p>
+                        (58) 676 80 59<br />
+                        603 657 033<br />
+                        <a href="mailto:kruszywa@kruszywolinia.pl" class="contact-email">kruszywa@kruszywolinia.pl</a>
+                    </p>
+                </div>
+                <div class="contact-entry">
+                    <h3>Dział ofert</h3>
+                    <p>
+                        (58) 676 80 59<br />
+                        661 416 356<br />
+                        <a href="mailto:dzialofert@kruszywolinia.pl" class="contact-email">dzialofert@kruszywolinia.pl</a>
+                    </p>
+                </div>
+            </div>
+            <div class="decorative-line fadeIn"></div>
+            <div class="contact-pair fadeIn">
+                <div class="contact-entry">
+                    <h3>Dział finansowy</h3>
+                    <p>
+                        (58) 676 80 59<br />
+                        663 020 828<br />
+                        <a href="mailto:finanse@kruszywolinia.pl" class="contact-email">finanse@kruszywolinia.pl</a>
+                    </p>
+                </div>
+                <div class="contact-entry">
+                    <h3>Dział kadr</h3>
+                    <p>
+                        (58) 676 80 59<br />
+                        <a href="mailto:kadry@kruszywolinia.pl" class="contact-email">kadry@kruszywolinia.pl</a>
+                    </p>
+                </div>
+            </div>
+            <div class="decorative-line fadeIn"></div>
+            <div class="contact-krs fadeIn">
+                <P>
+                    <b>KRS:</b> 0000128657<br />Sąd Rejonowy Gdańsk-Północ w Gdańsku, <br />VIII Wydział Gospodarczy Krajowego Rejestru Sądowego.<br />
+                    <b>REGON:</b> 190905370 | <b>NIP:</b> 841-13-48-795 | <b>Kapitał zakładowy:</b> 50 000,00 zł
+                </P>
+            </div>
+        </section>
+        <section class="contact-form-background">
+            <div class="container">
+                <div class="contact-form">
+                    <h2>Napisz do nas!</h2>
+                    <form action="#" method="post" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Imię:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Temat:</label>
+                            <input type="text" id="form-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Wiadomość:</label>
+                            <textarea id="form-message" name="message" required></textarea>
+                        </div>
+                        <div style="display:none;">
+                            <input type="text" name="honeypot" id="honeypot">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="button-send">Wyślij</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="map animate fadeInView">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9277.034290715445!2d17.935255744677708!3d54.45837293508913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fdeb1101189651%3A0xfa9c4dfd2e5aa948!2sKruszywo%20Sp.%20z%20o.o.!5e0!3m2!1spl!2spl!4v1767185350190!5m2!1spl!2spl" width="800" height="600" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <section class="trusted-section">
+        <div class="container animate fadeIn">
+            <div class="trusted-header">
+                <h3>Zaufali nam</h3>
+                <p>Współpracujemy z największymi inwestorami i samorządami na Pomorzu</p>
+            </div>
+
+            <div class="trusted-stats">
+                <div class="stat-box">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Obsłużonych Gmin</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Zrealizowanych Inwestycji</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">35</span>
+                    <span class="stat-label">Lat Doświadczenia</span>
+                </div>
+            </div>
+
+            <div class="trusted-logos">
+                <img src="images/logo.png" alt="Partner 1">
+                <img src="images/logo.png" alt="Partner 2">
+                <img src="images/logo.png" alt="Partner 3">
+                <img src="images/logo.png" alt="Partner 4">
+                <img src="images/logo.png" alt="Partner 5">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="gray-bar"></div>
+        <div class="white-bar"></div>
+        <section class="footer">
+            <div class="footer-section">
+                <div class="text">
+                    <p>&copy Kruszywo Sp. z o. o. 2024</p>
+                </div>
+                <div class="text">
+                    <p>
+                        <b>KRUSZYWO Sp. z o.o.</b><br />
+                        ul. Długa 4B<br />
+                        84-223 Linia<br />
+                        NIP: 8411348795
+                    </p>
+                </div>
+                <div class="text">
+                    tel./fax +48 58 676 80 59 <br />
+                    e-mail: <a href="mailto:biuro@kruszywolinia.pl" class="email">biuro@kruszywolinia.pl</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

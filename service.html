@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kruszywo Sp. z o. o. | Oferta</title>
+    <meta name="description" content="Szeroki wybór kruszyw: piaski 0/2, 0/3, żwiry, grysy i kamień norweski. Zapewniamy transport wywrotkami i profesjonalne doradztwo. Oblicz zapotrzebowanie kalkulatorem!">
+    <link rel="stylesheet" href="styles.css">
+    <script src="Scripts/inViewAnimations.js"></script>
+    <script src="Scripts/menu.js"></script>
+    <script src="Scripts/deliveryDetails.js"></script>
+    <script src="Scripts/calculator.js"></script>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <a href="index.html" class="logo-link">
+                <img class="logo" src="images/logo.png" alt="Kruszywo Sp. z o.o. - Logo firmy wydobywczej i drogowej">
+            </a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="about.html">O Nas</a></li>
+                    <li><a href="service.html">Oferta</a></li>
+                    <li><a href="gallery.html">Realizacje</a></li>
+                    <li><a href="work.html">Praca</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </section>
+        <div class="white-bar"></div>
+        <div class="blue-bar"></div>
+    </header>
+    <main>
+        <section class="title-bar">
+            <div class="title">
+                <h2>Oferta</h2>
+            </div>
+        </section>
+        <div class="hero-static">
+            <div class="container materials-title">
+                <h3>Kruszywa</h3>
+            </div>
+            <section class="container materials">
+                <div class="fadeIn clickable-item" data-id="piasek-02">
+                    <img class="material-img" src="Images/Kruszywa/piasek_0-2.jpg" alt="Materiał">
+                    <h4>Piasek 0/2</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="piasek-03">
+                    <img class="material-img" src="Images/Kruszywa/piasek_0-3.jpg" alt="Materiał">
+                    <h4>Piasek 0/3</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="zwir-28">
+                    <img class="material-img" src="Images/Kruszywa/zwir_2-8.jpg" alt="Materiał">
+                    <h4>Żwir 2/8</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="zwir-816">
+                    <img class="material-img" src="Images/Kruszywa/zwir_8-16.jpg" alt="Materiał">
+                    <h4>Żwir 8/16</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="grys-28">
+                    <img class="material-img" src="Images/Kruszywa/grys_2-8.jpg" alt="Materiał">
+                    <h4>Grys 2/8</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="grys-811">
+                    <img class="material-img" src="Images/Kruszywa/grys_8-11.jpg" alt="Materiał">
+                    <h4>Grys 8/11</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="grys-1116">
+                    <img class="material-img" src="Images/Kruszywa/grys_11-16.jpg" alt="Materiał">
+                    <h4>Grys 11/16</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="norwes-1622">
+                    <img class="material-img" src="Images/Kruszywa/norwes_16-22.jpg" alt="Materiał">
+                    <h4>Kamień Norweski 16/22</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="norwes-1632">
+                    <img class="material-img" src="Images/Kruszywa/norwes_16-32.jpg" alt="Materiał">
+                    <h4>Kamień Norweski 16/32</h4>
+                </div>
+            </section>
+            <div class="container materials-title">
+                <h3>Transport</h3>
+            </div>
+            <section class="container delivery">
+                <div class="fadeIn clickable-item" data-id="deliv-1">
+                    <img class="delivery-img" src="Images/flote.png" alt="Dostawa">
+                    <h4>Pickup</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="deliv-2">
+                    <img class="delivery-img" src="Images/flote.png" alt="Dostawa">
+                    <h4>Przyczepa</h4>
+                </div>
+                <div class="fadeIn clickable-item" data-id="deliv-3">
+                    <img class="delivery-img" src="Images/flote.png" alt="Dostawa">
+                    <h4>Wywrotka</h4>
+                </div>
+            </section>
+        </div>
+        <section class="calculator-container animate fadeIn">
+            <div class="container">
+                <div class="calc-card">
+                    <div class="calc-header">
+                        <h3>Kalkulator zapotrzebowania</h3>
+                        <p>Oszacuj, ile materiału potrzebujesz na swoją inwestycję</p>
+                    </div>
+                    <div class="calc-body">
+                        <div class="calc-inputs">
+                            <div class="form-group">
+                                <label>Długość (m)</label>
+                                <input type="number" id="calc-length" placeholder="10" step="0.1" min="0.1">
+                            </div>
+                            <div class="form-group">
+                                <label>Szerokość (m)</label>
+                                <input type="number" id="calc-width" placeholder="15" step="0.1" min="0.1">
+                            </div>
+                            <div class="form-group">
+                                <label>Grubość warstwy (cm)</label>
+                                <input type="number" id="calc-depth" placeholder="10" step="1" min="1">
+                            </div>
+                            <div class="form-group">
+                                <label>Rodzaj materiału</label>
+                                <select id="calc-type">
+                                    <option value="1.6">Piasek (0/2, 0/3)</option>
+                                    <option value="1.7">Żwir (2/8, 8/16)</option>
+                                    <option value="1.8">Kamień Norweski / Grys</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="calc-result-box">
+                            <div class="result-item">
+                                <span>Objętość:</span>
+                                <strong id="res-volume">0.00</strong> m³
+                            </div>
+                            <div class="result-item main">
+                                <span>Szacowana waga:</span>
+                                <strong id="res-weight">0.00</strong> TON
+                            </div>
+                            <p class="calc-note">*Wynik jest szacunkowy. Dokładna waga zależy od wilgotności i zagęszczenia materiału.</p>
+                            <button onclick="contactWithData()" class="welcome-button calc-btn">Zamów wycenę tego towaru</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="trusted-section">
+        <div class="container animate fadeIn">
+            <div class="trusted-header">
+                <h3>Zaufali nam</h3>
+                <p>Współpracujemy z największymi inwestorami i samorządami na Pomorzu</p>
+            </div>
+
+            <div class="trusted-stats">
+                <div class="stat-box">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Obsłużonych Gmin</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Zrealizowanych Inwestycji</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">35</span>
+                    <span class="stat-label">Lat Doświadczenia</span>
+                </div>
+            </div>
+
+            <div class="trusted-logos">
+                <img src="images/logo.png" alt="Partner 1">
+                <img src="images/logo.png" alt="Partner 2">
+                <img src="images/logo.png" alt="Partner 3">
+                <img src="images/logo.png" alt="Partner 4">
+                <img src="images/logo.png" alt="Partner 5">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="gray-bar"></div>
+        <div class="white-bar"></div>
+        <section class="footer">
+            <div class="footer-section">
+                <div class="text">
+                    <p>&copy Kruszywo Sp. z o. o. 2024</p>
+                </div>
+                <div class="text">
+                    <p>
+                        <b>KRUSZYWO Sp. z o.o.</b><br />
+                        ul. Długa 4B<br />
+                        84-223 Linia<br />
+                        NIP: 8411348795
+                    </p>
+                </div>
+                <div class="text">
+                    tel./fax +48 58 676 80 59 <br />
+                    e-mail: <a href="mailto:someone@example.com" class="email">biuro@kruszywolinia.pl</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div id="service-modal" class="modal">
+        <div class="modal-card">
+            <span class="close-card">&times;</span>
+            <div class="card-content">
+                <div class="card-gallery">
+                    <img id="main-detail-img" src="" alt="Zdjęcie główne">
+                    <div id="extra-thumbnails" class="thumbnails">
+                    </div>
+                </div>
+                <div class="card-text">
+                    <h3 id="detail-title"></h3>
+                    <p id="detail-description"></p>
+                    <div class="card-buttons">
+                        <a href="contact.html" id="contact-btn" class="welcome-button">Zapytaj o cenę</a>
+                        <button id="calc-link-btn" class="welcome-button">Oblicz zapotrzebowanie</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
